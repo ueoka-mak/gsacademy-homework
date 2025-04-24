@@ -167,6 +167,8 @@ body {
   .course-item {
     display: flex;
     margin-bottom: 9px;
+    /* Remove any potential gap */
+    gap: 0;
   }
   
   .course-image,
@@ -177,14 +179,17 @@ body {
   .course-image img {
     width: 100%;
     height: auto;
+    display: block; /* Prevents any image spacing issues */
   }
   
   .course-content {
-    padding: 120px 60px;
+    padding: 100px 50px;
+    box-sizing: border-box; 
   }
   
   .course-title {
     font-size: 24px;
+    font-weight: bold;
     margin-bottom: 40px;
   }
   
